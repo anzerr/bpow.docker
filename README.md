@@ -1,6 +1,6 @@
 
 <p align="center">
-	<img src="bin/logo.png" width="400">
+	<img src="bin/logo.svg" width="400">
 </p>
 
 ### `Intro`
