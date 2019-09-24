@@ -7,8 +7,8 @@
 		"update": "node bin/index.js"
 	},
 	"keywords": [],
-	"author": "",
-	"license": "ISC",
+	"author": "anzerr",
+	"license": "MIT",
 	"devDependencies": {
 		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
 	},
@@ -18,5 +18,17 @@
 	"dependencies": {
 		"cli.util": "git+https://git@github.com/anzerr/cli.util.git",
 		"dockerfile.util": "git+https://github.com/anzerr/dockerfile.util.git"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:anzerr/bpow.docker.git"
+	},
+	"engines": {
+		"node": ">= 0.10.0"
+	},
+	"types": "index.d.ts",
+	"bugs": {
+		"url": "https://github.com/anzerr/bpow.docker/issues"
+	},
+	"homepage": "https://github.com/anzerr/bpow.docker#readme"
 }

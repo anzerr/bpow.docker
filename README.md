@@ -4,6 +4,7 @@
 </p>
 
 ### `Intro`
+![GitHub Actions status | test](https://github.com/anzerr/bpow.docker/workflows/docker/badge.svg)
 Docker images to setup a client for [boompow](https://bpow.banano.cc/)
 
 ### `Clone`
