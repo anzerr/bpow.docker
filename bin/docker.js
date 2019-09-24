@@ -42,8 +42,9 @@ class Node extends util.Build {
 				.copy('--from=0 /app/boompow/client /app/client')
 				.copy('bin/supervisord.conf /etc/supervisord.conf')
 				.run([
-					'apt-get update && apt-get upgrade -y',
+					'apt-get update',
 					'apt-get install -y ocl-icd-libopencl1 supervisor',
+					'rm -rf /var/lib/apt/lists/*',
 					'mkdir -p /app/client/logs && mkdir -p /logs/',
 					'echo "" > /app/client/logs/bpow.log && echo "" > /logs/bpow.log',
 					'cd /app/client && pip3 install --no-cache-dir --user -r requirements.txt'

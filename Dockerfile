@@ -16,8 +16,9 @@ ENV PYTHONUNBUFFERED="1"
 COPY --from=0 /app/nano-work-server/target/release/nano-work-server /app/nano-work-server
 COPY --from=0 /app/boompow/client /app/client
 COPY bin/supervisord.conf /etc/supervisord.conf
-RUN apt-get update && apt-get upgrade -y && \
+RUN apt-get update && \
 	apt-get install -y ocl-icd-libopencl1 supervisor && \
+	rm -rf /var/lib/apt/lists/* && \
 	mkdir -p /app/client/logs && mkdir -p /logs/ && \
 	echo "" > /app/client/logs/bpow.log && echo "" > /logs/bpow.log && \
 	cd /app/client && pip3 install --no-cache-dir --user -r requirements.txt
