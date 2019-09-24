@@ -15,8 +15,8 @@ jobs:
       - uses: actions/checkout@v1
       - uses: anzerr/docker.action@master
         with:
-          username: anzerr
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
           registry: docker.pkg.github.com
           args: |
             npm run update &&
