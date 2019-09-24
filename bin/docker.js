@@ -40,7 +40,7 @@ class Node extends util.Build {
 				})
 				.copy('--from=0 /app/nano-work-server/target/release/nano-work-server /app/nano-work-server')
 				.copy('--from=0 /app/boompow/client /app/client')
-				.copy('supervisord.conf /etc/supervisord.conf')
+				.copy('bin/supervisord.conf /etc/supervisord.conf')
 				.run([
 					'apt-get update && apt-get upgrade -y',
 					'apt-get install -y ocl-icd-libopencl1 supervisor',

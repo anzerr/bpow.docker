@@ -1,4 +1,8 @@
 
+<p align="center">
+	<img src="bin/logo.png" width="400">
+</p>
+
 ### `Intro`
 Docker images to setup a client for [boompow](https://bpow.banano.cc/)
 
