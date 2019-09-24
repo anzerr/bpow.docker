@@ -1,6 +1,6 @@
 [submodule "boompow"]
 	path = boompow
-	url = git@github.com:anzerr/boompow.git
+	url = https://github.com/anzerr/boompow.git
 [submodule "nano-work-server"]
 	path = nano-work-server
-	url = git@github.com:anzerr/nano-work-server.git
+	url = https://github.com/anzerr/nano-work-server.git
