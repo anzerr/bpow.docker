@@ -46,7 +46,7 @@ class Node extends util.Build {
 					'apt-get install -y ocl-icd-libopencl1 supervisor',
 					'mkdir -p /app/client/logs && mkdir -p /logs/',
 					'echo "" > /app/client/logs/bpow.log && echo "" > /logs/bpow.log',
-					'cd /app/client && pip3 install --user -r requirements.txt'
+					'cd /app/client && pip3 install --no-cache-dir --user -r requirements.txt'
 				])
 				.cmd('["/usr/bin/supervisord"]');
 		});
