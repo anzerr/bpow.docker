@@ -28,7 +28,7 @@ Run with cpu
 ``` shell
 docker run \
 	-e "address=ban_3zi3ku5dqbdn1uzggcu9gggut1bojsa1a1jurdqnmcnohy94nu6bo3fo19cp" \
-	-e "type=-g 0:0" \
+	-e "type=-c 4" \
 	-e "work=any" \
 	--name bpow \
 	anzerr/bpow.docker:latest
@@ -37,7 +37,7 @@ Run with gpu
 ``` shell
 docker run \
 	-e "address=ban_3zi3ku5dqbdn1uzggcu9gggut1bojsa1a1jurdqnmcnohy94nu6bo3fo19cp" \
-	-e "type=-c 4" \
+	-e "type=-g 0:0" \
 	-e "work=any" \
 	--name bpow \
 	anzerr/bpow.docker:latest
